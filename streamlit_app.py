@@ -625,9 +625,10 @@ def generate_script(config: dict):
 
 
 def load_example():
-    st.session_state.aspen_file = "C:\project\PtMeOH_model.apwz"
-    st.session_state.input_excel = "C:\project\input_365days.xlsx"
-    st.session_state.output_dir = "C:\project results"
+    st.session_state.aspen_file = r"C:\project\PtMeOH_model.apwz"
+    st.session_state.input_excel = r"C:\project\input_365days.xlsx"
+    st.session_state.output_dir = r"C:\project
+esults"
     st.session_state.h2_path = r"\Data\Streams\SH2\Input\FLOW"
     st.session_state.output_variables = """Methanol_prod_mol_h=\Data\Streams\CRUDEMEO\Output\MOLEFLOW\MIXED\METHANOL
 Methanol_prod_kg_h=\Data\Streams\CRUDEMEO\Output\MASSFLOW\MIXED\METHANOL
@@ -790,4 +791,4 @@ st.code(script_text, language="python")
 st.download_button("Download generated .py file", data=script_text, file_name=st.session_state.script_name.strip() or "aspen_automation_generated.py", mime="text/x-python")
 
 st.subheader("How to deploy this app")
-st.markdown("1. Upload `streamlit_app.py`, `requirements.txt`, and `README.md` to a GitHub repository. 2. In Streamlit Community Cloud, create a new app and point it to `streamlit_app.py`.3. Once deployed, open the app, fill the form, and download your generated Aspen automation script.")
+st.markdown("1. Upload `streamlit_app.py`, `requirements.txt`, and `README.md` to a GitHub repository.2. In Streamlit Community Cloud, create a new app and point it to `streamlit_app.py`.3. Once deployed, open the app, fill the form, and download your generated Aspen automation script.")
