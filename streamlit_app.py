@@ -625,9 +625,9 @@ def generate_script(config: dict):
 
 
 def load_example():
-    st.session_state.aspen_file = r"C:\project\PtMeOH_model.apwz"
-    st.session_state.input_excel = r"C:\project\input_365days.xlsx"
-    st.session_state.output_dir = r"C:\projectesults"
+    st.session_state.aspen_file = "C:\project\PtMeOH_model.apwz"
+    st.session_state.input_excel = "C:\project\input_365days.xlsx"
+    st.session_state.output_dir = "C:\project results"
     st.session_state.h2_path = r"\Data\Streams\SH2\Input\FLOW"
     st.session_state.output_variables = """Methanol_prod_mol_h=\Data\Streams\CRUDEMEO\Output\MOLEFLOW\MIXED\METHANOL
 Methanol_prod_kg_h=\Data\Streams\CRUDEMEO\Output\MASSFLOW\MIXED\METHANOL
