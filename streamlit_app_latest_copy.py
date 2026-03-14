@@ -105,8 +105,7 @@ def prompt_if_missing(cfg):
     if is_blank(cfg["INPUT_VARIABLES"]["H2_mass_flow"]):
         cfg["INPUT_VARIABLES"]["H2_mass_flow"] = normalize_user_path(input("Aspen internal path for H2 mass flow: "))
 
-    print("
-If you want to add extra output paths from the keyboard, use:")
+    print("If you want to add extra output paths from the keyboard, use:")
     print(r"alias=\Data\... ; alias2=\Data\...")
     raw_outputs = input("Extra output paths (ENTER to keep CONFIG values): ").strip()
     extra_outputs = parse_output_paths_from_user(raw_outputs)
