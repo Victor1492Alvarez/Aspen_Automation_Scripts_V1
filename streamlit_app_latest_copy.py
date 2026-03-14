@@ -789,6 +789,4 @@ st.code(script_text, language="python")
 st.download_button("Download generated .py file", data=script_text, file_name=st.session_state.script_name.strip() or "aspen_automation_generated.py", mime="text/x-python")
 
 st.subheader("How to deploy this app")
-st.markdown("1. Upload `streamlit_app.py`, `requirements.txt`, and `README.md` to a GitHub repository." /
-            "2. In Streamlit Community Cloud, create a new app and point it to `streamlit_app.py". /
-            "3. Once deployed, open the app, fill the form, and download your generated Aspen automation script.")
+st.markdown("1-. Upload `streamlit_app.py`, `requirements.txt`, and `README.md` to a GitHub repository. 2-. In Streamlit Community Cloud, create a new app and point it to `streamlit_app.py". 3-. Once deployed, open the app, fill the form, and download your generated Aspen automation script.")
