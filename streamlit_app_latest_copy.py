@@ -314,8 +314,7 @@ def save_excel_report(results_df, log_df, config_df, output_excel):
 def save_txt_log(log_lines, txt_path):
     with open(txt_path, "w", encoding="utf-8") as f:
         for line in log_lines:
-            f.write(line + "
-")
+            f.write(line + "")
 
 
 def save_pdf_report(pdf_path, log_lines, results_df, cfg):
@@ -500,8 +499,7 @@ def main():
         save_pdf_report(output_pdf, log_lines, results_df, cfg)
         feasible_count = int(results_df["feasible"].fillna(0).sum()) if not results_df.empty else 0
         failed_count = len(results_df) - feasible_count
-        print("
-" + "=" * 70)
+        print("" + "=" * 70)
         print("EXECUTION FINISHED")
         print(f"Total simulations: {len(results_df)}")
         print(f"Successful convergence: {feasible_count}")
